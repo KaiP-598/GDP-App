@@ -1,0 +1,6 @@
+framework module Pods_GDP_App {
+  umbrella header "Pods-GDP App-umbrella.h"
+
+  export *
+  module * { export * }
+}

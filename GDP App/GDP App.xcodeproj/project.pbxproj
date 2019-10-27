@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A6502DB236584AB006D1478 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6502DA236584AB006D1478 /* AppDelegate.swift */; };
+		1A6502DD236584AB006D1478 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6502DC236584AB006D1478 /* ViewController.swift */; };
+		1A6502E0236584AB006D1478 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6502DE236584AB006D1478 /* Main.storyboard */; };
+		1A6502E2236584AC006D1478 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6502E1236584AC006D1478 /* Assets.xcassets */; };
+		1A6502E5236584AC006D1478 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6502E3236584AC006D1478 /* LaunchScreen.storyboard */; };
+		1A6502F0236584AC006D1478 /* GDP_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6502EF236584AC006D1478 /* GDP_AppTests.swift */; };
+		1A6502FB236584AD006D1478 /* GDP_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6502FA236584AD006D1478 /* GDP_AppUITests.swift */; };
+		532AC6B4F83572AB26F12FB6 /* Pods_GDP_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62CECBCC80809EA9E1B82A39 /* Pods_GDP_AppTests.framework */; };
+		5751D3F5331C612DF19F580B /* Pods_GDP_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B342403F45BF36F911BC560 /* Pods_GDP_AppUITests.framework */; };
+		EAA9B4E5FE540FBCD162F409 /* Pods_GDP_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD97809073B57833E46EEB7A /* Pods_GDP_App.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A6502EC236584AC006D1478 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A6502CF236584AB006D1478 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A6502D6236584AB006D1478;
+			remoteInfo = "GDP App";
+		};
+		1A6502F7236584AD006D1478 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A6502CF236584AB006D1478 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A6502D6236584AB006D1478;
+			remoteInfo = "GDP App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A6502D7236584AB006D1478 /* GDP App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GDP App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6502DA236584AB006D1478 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A6502DC236584AB006D1478 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A6502DF236584AB006D1478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A6502E1236584AC006D1478 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A6502E4236584AC006D1478 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A6502E6236584AC006D1478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A6502EB236584AC006D1478 /* GDP AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GDP AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6502EF236584AC006D1478 /* GDP_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDP_AppTests.swift; sourceTree = "<group>"; };
+		1A6502F1236584AD006D1478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A6502F6236584AD006D1478 /* GDP AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GDP AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6502FA236584AD006D1478 /* GDP_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDP_AppUITests.swift; sourceTree = "<group>"; };
+		1A6502FC236584AD006D1478 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23E57764B8EBE629B0CDC672 /* Pods-GDP App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDP App.debug.xcconfig"; path = "Target Support Files/Pods-GDP App/Pods-GDP App.debug.xcconfig"; sourceTree = "<group>"; };
+		3A3378F8055299E52288BBF7 /* Pods-GDP AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDP AppTests.debug.xcconfig"; path = "Target Support Files/Pods-GDP AppTests/Pods-GDP AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3A9BDD714D49C73820D8679A /* Pods-GDP AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDP AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-GDP AppUITests/Pods-GDP AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		45DA63C1F8B2C2E117B064BA /* Pods-GDP AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDP AppTests.release.xcconfig"; path = "Target Support Files/Pods-GDP AppTests/Pods-GDP AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		51E85AEB6D9C38AD8B28B27F /* Pods-GDP App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDP App.release.xcconfig"; path = "Target Support Files/Pods-GDP App/Pods-GDP App.release.xcconfig"; sourceTree = "<group>"; };
+		62CECBCC80809EA9E1B82A39 /* Pods_GDP_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDP_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B342403F45BF36F911BC560 /* Pods_GDP_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDP_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6B7C88E96B5811164E049AF /* Pods-GDP AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDP AppUITests.release.xcconfig"; path = "Target Support Files/Pods-GDP AppUITests/Pods-GDP AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CD97809073B57833E46EEB7A /* Pods_GDP_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDP_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A6502D4236584AB006D1478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA9B4E5FE540FBCD162F409 /* Pods_GDP_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A6502E8236584AC006D1478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				532AC6B4F83572AB26F12FB6 /* Pods_GDP_AppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A6502F3236584AD006D1478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5751D3F5331C612DF19F580B /* Pods_GDP_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A6502CE236584AB006D1478 = {
+			isa = PBXGroup;
+			children = (
+				1A6502D9236584AB006D1478 /* GDP App */,
+				1A6502EE236584AC006D1478 /* GDP AppTests */,
+				1A6502F9236584AD006D1478 /* GDP AppUITests */,
+				1A6502D8236584AB006D1478 /* Products */,
+				932DA006A0BC92E5767700C6 /* Pods */,
+				1BDCBA2939A36FBCF6FA67EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A6502D8236584AB006D1478 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A6502D7236584AB006D1478 /* GDP App.app */,
+				1A6502EB236584AC006D1478 /* GDP AppTests.xctest */,
+				1A6502F6236584AD006D1478 /* GDP AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A6502D9236584AB006D1478 /* GDP App */ = {
+			isa = PBXGroup;
+			children = (
+				1A6502DA236584AB006D1478 /* AppDelegate.swift */,
+				1A6502DC236584AB006D1478 /* ViewController.swift */,
+				1A6502DE236584AB006D1478 /* Main.storyboard */,
+				1A6502E1236584AC006D1478 /* Assets.xcassets */,
+				1A6502E3236584AC006D1478 /* LaunchScreen.storyboard */,
+				1A6502E6236584AC006D1478 /* Info.plist */,
+			);
+			path = "GDP App";
+			sourceTree = "<group>";
+		};
+		1A6502EE236584AC006D1478 /* GDP AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A6502EF236584AC006D1478 /* GDP_AppTests.swift */,
+				1A6502F1236584AD006D1478 /* Info.plist */,
+			);
+			path = "GDP AppTests";
+			sourceTree = "<group>";
+		};
+		1A6502F9236584AD006D1478 /* GDP AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1A6502FA236584AD006D1478 /* GDP_AppUITests.swift */,
+				1A6502FC236584AD006D1478 /* Info.plist */,
+			);
+			path = "GDP AppUITests";
+			sourceTree = "<group>";
+		};
+		1BDCBA2939A36FBCF6FA67EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD97809073B57833E46EEB7A /* Pods_GDP_App.framework */,
+				62CECBCC80809EA9E1B82A39 /* Pods_GDP_AppTests.framework */,
+				6B342403F45BF36F911BC560 /* Pods_GDP_AppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		932DA006A0BC92E5767700C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23E57764B8EBE629B0CDC672 /* Pods-GDP App.debug.xcconfig */,
+				51E85AEB6D9C38AD8B28B27F /* Pods-GDP App.release.xcconfig */,
+				3A3378F8055299E52288BBF7 /* Pods-GDP AppTests.debug.xcconfig */,
+				45DA63C1F8B2C2E117B064BA /* Pods-GDP AppTests.release.xcconfig */,
+				3A9BDD714D49C73820D8679A /* Pods-GDP AppUITests.debug.xcconfig */,
+				C6B7C88E96B5811164E049AF /* Pods-GDP AppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A6502D6236584AB006D1478 /* GDP App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A6502FF236584AD006D1478 /* Build configuration list for PBXNativeTarget "GDP App" */;
+			buildPhases = (
+				6EDA8269D1ABD0C73A629E1B /* [CP] Check Pods Manifest.lock */,
+				1A6502D3236584AB006D1478 /* Sources */,
+				1A6502D4236584AB006D1478 /* Frameworks */,
+				1A6502D5236584AB006D1478 /* Resources */,
+				E48CDF867A54F30C1C65C1A9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GDP App";
+			productName = "GDP App";
+			productReference = 1A6502D7236584AB006D1478 /* GDP App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A6502EA236584AC006D1478 /* GDP AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A650302236584AD006D1478 /* Build configuration list for PBXNativeTarget "GDP AppTests" */;
+			buildPhases = (
+				4293D33C265638840386F8B8 /* [CP] Check Pods Manifest.lock */,
+				1A6502E7236584AC006D1478 /* Sources */,
+				1A6502E8236584AC006D1478 /* Frameworks */,
+				1A6502E9236584AC006D1478 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A6502ED236584AC006D1478 /* PBXTargetDependency */,
+			);
+			name = "GDP AppTests";
+			productName = "GDP AppTests";
+			productReference = 1A6502EB236584AC006D1478 /* GDP AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1A6502F5236584AD006D1478 /* GDP AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A650305236584AD006D1478 /* Build configuration list for PBXNativeTarget "GDP AppUITests" */;
+			buildPhases = (
+				21E6E20ECB2BC00FC361D01C /* [CP] Check Pods Manifest.lock */,
+				1A6502F2236584AD006D1478 /* Sources */,
+				1A6502F3236584AD006D1478 /* Frameworks */,
+				1A6502F4236584AD006D1478 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A6502F8236584AD006D1478 /* PBXTargetDependency */,
+			);
+			name = "GDP AppUITests";
+			productName = "GDP AppUITests";
+			productReference = 1A6502F6236584AD006D1478 /* GDP AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A6502CF236584AB006D1478 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Kaipeng Wu";
+				TargetAttributes = {
+					1A6502D6236584AB006D1478 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					1A6502EA236584AC006D1478 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1A6502D6236584AB006D1478;
+					};
+					1A6502F5236584AD006D1478 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1A6502D6236584AB006D1478;
+					};
+				};
+			};
+			buildConfigurationList = 1A6502D2236584AB006D1478 /* Build configuration list for PBXProject "GDP App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A6502CE236584AB006D1478;
+			productRefGroup = 1A6502D8236584AB006D1478 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A6502D6236584AB006D1478 /* GDP App */,
+				1A6502EA236584AC006D1478 /* GDP AppTests */,
+				1A6502F5236584AD006D1478 /* GDP AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A6502D5236584AB006D1478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6502E5236584AC006D1478 /* LaunchScreen.storyboard in Resources */,
+				1A6502E2236584AC006D1478 /* Assets.xcassets in Resources */,
+				1A6502E0236584AB006D1478 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A6502E9236584AC006D1478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A6502F4236584AD006D1478 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21E6E20ECB2BC00FC361D01C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GDP AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4293D33C265638840386F8B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GDP AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EDA8269D1ABD0C73A629E1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GDP App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E48CDF867A54F30C1C65C1A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GDP App/Pods-GDP App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GDP App/Pods-GDP App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GDP App/Pods-GDP App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A6502D3236584AB006D1478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6502DD236584AB006D1478 /* ViewController.swift in Sources */,
+				1A6502DB236584AB006D1478 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A6502E7236584AC006D1478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6502F0236584AC006D1478 /* GDP_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A6502F2236584AD006D1478 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6502FB236584AD006D1478 /* GDP_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A6502ED236584AC006D1478 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A6502D6236584AB006D1478 /* GDP App */;
+			targetProxy = 1A6502EC236584AC006D1478 /* PBXContainerItemProxy */;
+		};
+		1A6502F8236584AD006D1478 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A6502D6236584AB006D1478 /* GDP App */;
+			targetProxy = 1A6502F7236584AD006D1478 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A6502DE236584AB006D1478 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A6502DF236584AB006D1478 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A6502E3236584AC006D1478 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A6502E4236584AC006D1478 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A6502FD236584AD006D1478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A6502FE236584AD006D1478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A650300236584AD006D1478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23E57764B8EBE629B0CDC672 /* Pods-GDP App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AVS9V87PV7;
+				INFOPLIST_FILE = "GDP App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaipengwu598.GDP-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A650301236584AD006D1478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E85AEB6D9C38AD8B28B27F /* Pods-GDP App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AVS9V87PV7;
+				INFOPLIST_FILE = "GDP App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaipengwu598.GDP-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A650303236584AD006D1478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3378F8055299E52288BBF7 /* Pods-GDP AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AVS9V87PV7;
+				INFOPLIST_FILE = "GDP AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaipengwu598.GDP-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDP App.app/GDP App";
+			};
+			name = Debug;
+		};
+		1A650304236584AD006D1478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45DA63C1F8B2C2E117B064BA /* Pods-GDP AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AVS9V87PV7;
+				INFOPLIST_FILE = "GDP AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaipengwu598.GDP-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDP App.app/GDP App";
+			};
+			name = Release;
+		};
+		1A650306236584AD006D1478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A9BDD714D49C73820D8679A /* Pods-GDP AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AVS9V87PV7;
+				INFOPLIST_FILE = "GDP AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaipengwu598.GDP-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GDP App";
+			};
+			name = Debug;
+		};
+		1A650307236584AD006D1478 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6B7C88E96B5811164E049AF /* Pods-GDP AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AVS9V87PV7;
+				INFOPLIST_FILE = "GDP AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kaipengwu598.GDP-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GDP App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A6502D2236584AB006D1478 /* Build configuration list for PBXProject "GDP App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A6502FD236584AD006D1478 /* Debug */,
+				1A6502FE236584AD006D1478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A6502FF236584AD006D1478 /* Build configuration list for PBXNativeTarget "GDP App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A650300236584AD006D1478 /* Debug */,
+				1A650301236584AD006D1478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A650302236584AD006D1478 /* Build configuration list for PBXNativeTarget "GDP AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A650303236584AD006D1478 /* Debug */,
+				1A650304236584AD006D1478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A650305236584AD006D1478 /* Build configuration list for PBXNativeTarget "GDP AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A650306236584AD006D1478 /* Debug */,
+				1A650307236584AD006D1478 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A6502CF236584AB006D1478 /* Project object */;
+}
