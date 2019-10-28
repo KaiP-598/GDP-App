@@ -12,3 +12,14 @@ An iOS App that allows you to see GDP of countries and related regions
 1. The initial year is defaulted to 2018 and ranged from 2000 - 2018
 2. The initial order is sorted by name
 3. Relevant aggregate groups are included in the list along with countries and related regions, as returned from the API.
+
+# How to run the App
+1. Download the file from GitHub
+2. Open file using Xcode
+3. Select a Simulator or a connected device in Xcode
+4. Select Automatically manage signing with your team and an unique Bundle Identifier
+5. Run the app
+
+# Testing
+Unit tests are written to cover the major parts of the App
+<img src="https://firebasestorage.googleapis.com/v0/b/bredway-test-environment.appspot.com/o/to_be_deleted%2FUnitTests.png?alt=media&token=a2f90646-7ede-43ba-9e42-79aa563d15d5" height="400" width="400">
