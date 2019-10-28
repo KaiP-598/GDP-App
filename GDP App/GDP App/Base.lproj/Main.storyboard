@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Country View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CountryViewController" customModule="GDP_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ypf-uk-JjC">
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qgL-qa-dKe">
+                                <rect key="frame" x="0.0" y="84" width="414" height="40"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LJq-te-Vp5">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                        <segments>
+                                            <segment title="Sort by name"/>
+                                            <segment title="Sort by GDP"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="segmentedControlValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="QaH-f0-9HW"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="LJq-te-Vp5" secondAttribute="bottom" id="99G-k5-KJZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="RIH-y0-26B"/>
+                                    <constraint firstItem="LJq-te-Vp5" firstAttribute="top" secondItem="qgL-qa-dKe" secondAttribute="top" id="h0o-jb-rhG"/>
+                                    <constraint firstAttribute="trailing" secondItem="LJq-te-Vp5" secondAttribute="trailing" id="uv1-8G-3qI"/>
+                                    <constraint firstItem="LJq-te-Vp5" firstAttribute="leading" secondItem="qgL-qa-dKe" secondAttribute="leading" id="vZ2-st-tQh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NcS-1B-IYI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="wyr-Yq-Inh">
+                                        <rect key="frame" x="20" y="0.0" width="374" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxk-LN-LiR">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="usH-Yd-zzG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2018" minValue="2000" maxValue="2018" translatesAutoresizingMaskIntoConstraints="NO" id="IMJ-AV-jVB">
+                                                <rect key="frame" x="98" y="0.0" width="278" height="41"/>
+                                                <connections>
+                                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="WUM-wM-cky"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="IMJ-AV-jVB" secondAttribute="trailing" id="hGl-7P-7pZ"/>
+                                            <constraint firstItem="IMJ-AV-jVB" firstAttribute="leading" secondItem="Pxk-LN-LiR" secondAttribute="trailing" id="hfQ-5M-p27"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wyr-Yq-Inh" secondAttribute="bottom" id="8mm-w8-5YP"/>
+                                    <constraint firstItem="wyr-Yq-Inh" firstAttribute="leading" secondItem="NcS-1B-IYI" secondAttribute="leading" constant="20" id="Cih-bI-4RO"/>
+                                    <constraint firstItem="wyr-Yq-Inh" firstAttribute="top" secondItem="NcS-1B-IYI" secondAttribute="top" id="DtE-lI-uhx"/>
+                                    <constraint firstAttribute="trailing" secondItem="wyr-Yq-Inh" secondAttribute="trailing" constant="20" id="d7f-8Q-zVd"/>
+                                    <constraint firstAttribute="height" constant="40" id="lLU-so-rJO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ypf-uk-JjC" firstAttribute="top" secondItem="qgL-qa-dKe" secondAttribute="bottom" id="2pA-06-gAs"/>
+                            <constraint firstItem="qgL-qa-dKe" firstAttribute="top" secondItem="NcS-1B-IYI" secondAttribute="bottom" id="6js-KI-ryo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ypf-uk-JjC" secondAttribute="trailing" id="EYK-3R-gBr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ypf-uk-JjC" secondAttribute="bottom" id="FPU-qT-YaV"/>
+                            <constraint firstItem="qgL-qa-dKe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JAO-lB-zyX"/>
+                            <constraint firstItem="NcS-1B-IYI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XYd-Zq-7Go"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qgL-qa-dKe" secondAttribute="trailing" id="ZQ5-d7-fmt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NcS-1B-IYI" secondAttribute="trailing" id="aYS-D5-9ap"/>
+                            <constraint firstItem="NcS-1B-IYI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ehK-V4-fzv"/>
+                            <constraint firstItem="ypf-uk-JjC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ms5-gt-luO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="segmentedControl" destination="LJq-te-Vp5" id="9Ul-Pa-ppZ"/>
+                        <outlet property="segmentedControlContainerView" destination="qgL-qa-dKe" id="3RT-tu-MdA"/>
+                        <outlet property="tableView" destination="ypf-uk-JjC" id="5rs-BG-Egv"/>
+                        <outlet property="yearLabel" destination="Pxk-LN-LiR" id="xi0-M2-dhO"/>
+                        <outlet property="yearSlider" destination="IMJ-AV-jVB" id="gHp-gE-DAd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
         </scene>
     </scenes>
 </document>
