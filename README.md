@@ -1,5 +1,6 @@
 # GDP-App
 An iOS App that allows you to see GDP of countries and related regions
+<img src="https://firebasestorage.googleapis.com/v0/b/bredway-test-environment.appspot.com/o/to_be_deleted%2FHomePage.png?alt=media&token=0a9a36bb-a1d0-41e4-b78e-2a4e57b5a743" height="840" width="400">
 
 # User Stories
 1. As a user I want to see GDP of countries and related regions so I can check their economic conditions.
